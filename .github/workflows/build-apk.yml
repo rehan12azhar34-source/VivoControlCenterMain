@@ -1,4 +1,7 @@
-name: Build Vivo Shortcut Center APK
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools platforms;android-33 build-tools;33.0.2name: Build Vivo Shortcut Center APK
 
 on: [push, workflow_dispatch]
 
